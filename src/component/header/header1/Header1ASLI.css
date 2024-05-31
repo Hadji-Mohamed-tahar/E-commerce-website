@@ -42,12 +42,10 @@
   transition: max-height 0.5s ease, opacity 0.5s ease;
   opacity: 0;
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .item-right.active {
-  max-height: 200px; 
+  max-height: 200px; /* Adjust as needed */
   opacity: 1;
 }
 
@@ -56,19 +54,16 @@
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 
 .item-right .item-mode-lang-soc li {
-  margin: 0 5px;
+  margin-right: 10px;
   font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.item-right .item-mode-lang-soc li select,
-.item-right .item-mode-lang-soc li a {
-  flex: 1;
+.item-right .item-mode-lang-soc li:last-child {
+  margin-right: 0;
 }
 
 /* Language selection */
@@ -78,12 +73,8 @@
   background-color: transparent;
   color: white;
   border: 1px solid white;
-  text-align: center; 
 }
-.item-right .item-mode-lang-soc select option {
-  background-color: #5dc3be; 
-  color: #ffffff;
-}
+
 .item-right .item-mode-lang-soc select:focus {
   outline: none;
 }
@@ -96,15 +87,16 @@
 }
 
 .item-right .item-mode-lang-soc .social-media li {
-  margin: 0 5px;
+  margin-right: 10px;
+}
+
+.item-right .item-mode-lang-soc .social-media li:last-child {
+  margin-right: 0;
 }
 
 .item-right .item-mode-lang-soc .social-media a {
   color: white;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .item-right .item-mode-lang-soc .social-media a:hover {
@@ -136,34 +128,15 @@
     max-height: 0;
     opacity: 0;
     transition: max-height 0.5s ease, opacity 0.5s ease;
-    justify-content: flex-start;
   }
 
   .item-right.active {
-    max-height: 300px; 
+    max-height: 300px; /* Adjust as needed */
     opacity: 1;
-    display: flex;
-    justify-content: flex-start; 
-  }
-
-  .item-right .item-mode-lang-soc {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .item-right .item-mode-lang-soc li {
-    margin: 5px 5px;
-    justify-content: flex-start;
-    width: auto;
-  }
-
-  .item-right .item-mode-lang-soc li:last-child {
-    margin-bottom: 0;
   }
 }
 
+/* Ensure .item-right is visible on larger screens when active */
 @media screen and (min-width: 851px) {
   .item-right {
     max-height: none;
