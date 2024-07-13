@@ -1,0 +1,17 @@
+.CarouselProducts {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.CarouselProducts .react-multi-carousel-list {
+  overflow: visible; /* تأكد من عدم قطع العناصر */
+}
+
+.CarouselProducts .react-multi-carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

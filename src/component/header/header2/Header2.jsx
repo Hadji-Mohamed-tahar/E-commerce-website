@@ -6,12 +6,12 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 
 const Header2 = () => {
-  const [clicked, setClicked] = useState(true);
+  const [clicked, setClicked] = useState(false);
   return (
     <nav className="navbar-items">
       <h1 className="logo">React</h1>
       <div className="menu-icons" onClick={() => setClicked(!clicked)}>
-        {clicked ? <CgMenuRightAlt /> : <AiOutlineClose />}
+        {clicked ?<AiOutlineClose /> :  <CgMenuRightAlt />}
       </div>
       <ul className={clicked ? "nav-menu active":"nav-menu"}>
         {MenuData.map((item, index) => {

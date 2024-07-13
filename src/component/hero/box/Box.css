@@ -1,0 +1,46 @@
+.box {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5); /* خلفية شفافة */
+}
+.box::before {
+  content: ""; /* إضافة محتوى فارغ لتفعيل عنصر الـ ::before */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(70, 67, 67, 0.5); /* خلفية شفافة */
+}
+.box .content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
+
+.box .small-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.box .large-text {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.box-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.5s ease-in-out;
+
+}
+.box-link:hover {
+  background-color: rgba(240, 248, 255, 0.348);
+  padding: 5px;
+  border-radius: 5px;
+}

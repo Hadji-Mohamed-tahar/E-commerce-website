@@ -1,0 +1,96 @@
+
+.footer {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 20px;
+  background-color: #ddd111;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo .img img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.download-info, .links, .contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-info ul, .links ul, .contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.download-info li, .links li, .contact-info li {
+  margin-bottom: 10px;
+}
+
+.download-info a, .links a, .contact-info a {
+  color: black;
+  text-decoration: none;
+}
+
+.download-info a:hover, .links a:hover, .contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-media li {
+  margin: 0 5px;
+}
+
+.social-media a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.social-media a:hover {
+  color: #f0f0f0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-logo {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-logo, .download-info, .links, .contact-info {
+    align-items: center;
+  }
+}

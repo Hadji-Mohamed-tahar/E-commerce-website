@@ -1,0 +1,81 @@
+/* 
+
+ .ProductPriceCard {
+  width: 100%; 
+  max-width: 300px; 
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; 
+  box-sizing: border-box; 
+}
+
+ul.ProductPriceCard-text {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 0; 
+}
+
+.ProductPriceCard-AddCart {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px; 
+} */
+
+.ProductPriceCard {
+  width: 100%; /* Adjusted to ensure responsiveness */
+  max-width: 300px; /* Maintains a max width */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure space is distributed */
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the card within the grid item */
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
+  height: 100%; /* Ensure the card takes full height */
+}
+
+.ProductPriceCard-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+ul.ProductPriceCard-text {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 0; /* Remove default margin */
+  flex-grow: 1; /* Ensure the text takes up remaining space */
+}
+
+.ProductPriceCard-AddCart {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px; /* Add margin for spacing */
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ProductPriceCard-AddCart:hover {
+  background-color: #ddb347;
+}

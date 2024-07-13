@@ -1,3 +1,71 @@
+
 .Hero{
-  padding-top: 100px;
+  padding-top: 10px;
+  background-color: aqua;
+}
+.Hero.container{
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 4fr 2fr; 
+  gap: 10px;
+  background-color: rgb(221, 177, 19);
+  margin: 0 auto;
+  width: 95%;
+}
+@media screen and (max-width: 850px) {
+  .Hero.container {
+    grid-template-columns: 1fr; 
+    /* grid-template-rows: auto auto;  */
+    grid-template-rows: 1fr 200px;
+    gap: 10px; 
+  }
+}
+.Main-hero{
+  background-color: rgb(38, 48, 162);
+  height: 500px;
+  position: relative;
+}
+.Main-hero .btns-slider{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  display: flex;
+}
+.Main-hero .btn{
+ width: 20px;
+ height: 20px;
+ background-color: rgba(255, 255, 255, 0.546);
+ margin-right: 5px;
+ z-index: 999;
+ border-radius: 50%;
+}
+.Main-hero .btn.active,
+.Main-hero .btn:hover
+{
+  width: 23px;
+  height: 23px;
+  background-color: rgba(246, 168, 168, 0.546);
+  margin-right: 5px;
+  z-index: 999;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
+ }
+
+
+
+.secondary-hero{
+  background-color: rgb(228, 19, 19);
+  /* height: 500px; */
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+
+}
+@media screen and (max-width: 850px) {
+  .Main-hero, .secondary-hero {
+    grid-template-columns: repeat(2,1fr); 
+    grid-template-rows: 200px;
+    gap: 10px; 
+  }
 }

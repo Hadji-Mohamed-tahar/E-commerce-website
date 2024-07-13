@@ -1,0 +1,37 @@
+.CategoryName{
+  height: 100%;
+}
+.CategoryName ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+}
+.CategoryName ul li:first-child{
+  font-weight: 700;
+}
+.CategoryName ul li:last-child{
+  font-weight: 500;
+  position: relative;
+}
+
+.CategoryName ul li:last-child a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.3s ease-out;
+}
+
+.CategoryName ul li:last-child a:hover::after {
+  width: 70%;
+}
+.CategoryName ul li a{
+  text-decoration: none;
+  color: black;
+}

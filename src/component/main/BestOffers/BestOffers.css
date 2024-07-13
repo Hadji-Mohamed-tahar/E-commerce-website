@@ -1,0 +1,30 @@
+.BestOffers {
+  background-color: antiquewhite;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5px;
+  padding:  20px 10px;
+  box-sizing: border-box;
+}
+
+/* للشاشات الكبيرة */
+@media (min-width: 992px) {
+  .BestOffers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* للشاشات المتوسطة */
+@media (min-width: 768px) and (max-width: 991px) {
+  .BestOffers {
+    grid-template-columns: 1fr;
+  }
+}
+/* للشاشات الصغيرة */
+@media (min-width: 350px) and (max-width: 350px) {
+  .BestOffers {
+    grid-template-columns: 0.5fr;
+  }
+}
+

@@ -1,0 +1,61 @@
+
+.BestOffersCard {
+  width: 100%;
+  height: 180px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.BestOffersCard .BestOffersCard-text {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.BestOffersCard .BestOffersCard-text h5 {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.BestOffersCard .BestOffersCard-text h6 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #666;
+}
+
+.BestOffersCard .BestOffersCard-text a {
+  text-decoration: none;
+  color: #d9534f;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.BestOffersCard .BestOffersCard-text a:hover {
+  color: #c9302c;
+}
+
+.BestOffersCard .BestOffersCard-img {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BestOffersCard .BestOffersCard-img img {
+  width: 100%;
+  height: 100%;
+  max-height: 160px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.BestOffersCard:hover .BestOffersCard-img img {
+  transform: scale(1.05);
+}
